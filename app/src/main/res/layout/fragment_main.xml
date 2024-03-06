@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginHorizontal="@dimen/margin_big"
+        android:hint="@string/enter_number_here"
+        android:inputType="number"
+        android:textCursorDrawable="@color/black"
+        android:backgroundTint="@color/black"
+        android:importantForAutofill="no" />
+    <TextView
+        android:id="@+id/btnClear"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/clear_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginHorizontal="@dimen/margin_big"/>
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:layout_marginBottom="@dimen/margin_small"/>
+
+    <TextView
+        android:id="@+id/btnGetFact"
+        android:text="@string/get_a_fact"
+        android:background="@drawable/btnapp"
+        android:layout_gravity="center"
+        android:layout_width="220dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="@dimen/margin_big"
+        android:layout_height="50dp"/>
+    <TextView
+        android:id="@+id/btnGetRandomFact"
+        android:text="@string/random_fact"
+        android:background="@drawable/btnapp"
+        android:layout_gravity="center"
+        android:layout_width="220dp"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="@dimen/margin_big"
+        android:layout_height="50dp"/>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/margin_big"
+        android:background="@color/black"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal"
+        tools:listitem="@layout/rv_history_item"/>
+
+</LinearLayout>

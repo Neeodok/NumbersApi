@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app">
+
+    <TextView
+        android:id="@+id/textViewMath"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/math"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNumberDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/margin_normal"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMath"
+        tools:text="lorem ipsum" />
+
+    <TextView
+        android:id="@+id/textViewTrivia"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_margin="@dimen/margin_normal"
+        android:text="@string/trivia"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumberDetails" />
+
+    <TextView
+        android:id="@+id/tvNumberDetailsTrivia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_normal"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTrivia"
+        tools:text="lorem ipsum" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/margin_normal"
+        android:gravity="center"
+        android:text="@string/date"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumberDetailsTrivia" />
+
+    <TextView
+        android:id="@+id/tvNumberDetailsDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/margin_normal"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate"
+        tools:text="lorem ipsum" />
+
+    <TextView
+        android:id="@+id/btnBack"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:background="@drawable/btnapp"
+        android:gravity="center"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Numeric Facts</string>
+    <string name="back">Back</string>
+    <string name="random_fact">Get Random Fact</string>
+    <string name="get_a_fact">Get A Fact</string>
+    <string name="enter_number_here">Enter Number Here</string>
+    <string name="math">Math</string>
+    <string name="trivia">Trivia</string>
+    <string name="date">Date</string>
+    <string name="clear_history">Clearing history</string>
+</resources>
